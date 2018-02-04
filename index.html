@@ -6,66 +6,150 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Project X</title>
   <style>
-    .greeting{
+    .greeting {
       text-align: center;
     }
 
-  </style>
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 960px;
+      margin: 0 auto;
+    }
 
+    .row {
+      margin: 0 auto !important;
+      padding: 0;
+      width: 960px;
+    }
+
+    .navbar {
+      display: flex;
+      background-color: #ffca46;
+      height: 78px;
+      margin-bottom: 0 !important;
+    }
+
+    .nav-links a {
+      width: 81px;
+      height: 58px;
+      font-size: 17px;
+      font-weight: 500;
+      color: #000000;
+      margin-left: 35px;
+    }
+
+    .nav-links a:hover {
+      color: #000000;
+    }
+
+    .brand__name {
+      width: 257px;
+      height: 58px;
+      font-family: Raleway;
+      font-size: 30px;
+      font-weight: 500;
+      color: #000000;
+    }
+
+    .brand__logo {
+      margin-top: -16px;
+      margin-right: 6px;
+      width: 45px;
+    }
+
+    .heading {
+      font-family: Raleway;
+      font-size: 34px;
+      font-weight: 600;
+      text-align: left;
+      color: #000000;
+    }
+
+    .title-content {
+      font-family: Roboto;
+      font-size: 17px;
+      color: #000000;
+    }
+
+    .title-list {
+      margin-left: -22px;
+    }
+
+    .grey-bg {
+      background-color: #f5f5f5;
+    }
+
+    .title-section {
+      margin-top: -78px;
+      height: 100vh;
+    }
+
+    .title-row {
+      padding-top: 140px;
+    }
+  </style>
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-
-
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Project X</a>
+  <nav class="navbar">
+    <div class="content">
+      <div class="brand">
+        <img class="brand__logo" src="/assets/img/logo.png" />
+        <span class="brand__name">Project Access</span>
       </div>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/screening">Screening</a></li>
-        <li><a href="/resources">Resources</a></li>
-        <li><a href="/providers">Providers</a></li>
-      </ul>
-
+      <div class="nav-links">
+        <a href="#">Resources</a>
+        <a href="#">Screening</a>
+        <a href="#">Providers</a>
+        <a href="#">Community</a>
+      </div>
     </div>
   </nav>
 
-  <div id="landing" class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <img src="http://via.placeholder.com/300x300" alt="placeholder">
-      </div>
-      <div class="col-md-8">
-        <div class="greeting">
-          <p>Welcome to Project X, your one-stop solution for:</p>
-          <ol>
-            <li>Comprehensive Mental Health Screening</li>
-            <li>Educational Resources about Mental Illnesses</li>
-            <li>Treatment Provider Search</li>
-            <li>Patient Lived Experience Stories</li>
-            <li>Community Forums</li>
-          </ol>
-          <p>We provide free, confidential, online and comprehensive mental health
-            screening to adults in the San Francisco Bay Area with mental health
-            concerns and help you find treatment providers, learn more about
-            common mental health conditions that may be affecting you, and
-            connect with members of the community who are going through similar experiences</p>
-          <div class="buttons">
-            <a href="#" class="btn btn-primary btn-lg" role="button">Screening</a>
-            <a href="#" class="btn btn-primary btn-lg" role="button">Providers</a>
-          </div>
+  <div class="grey-bg title-section">
+    <div class="row title-row">
+      <h1 class="heading">
+        Welcome to Project Access
+      </h1>
+
+      <div class="title-content">
+        <div class="subheading">
+          Your one stop shop for:
         </div>
+        <ol class="title-list">
+          <li>Comprehensive Mental Health Screening</li>
+          <li>Educational Resources about Mental Illnesses</li>
+          <li>Treatment Provider Search</li>
+          <li>Patient Lived Experience Stories</li>
+          <li>Community Forums</li>
+        </ol>
+        <p>
+          We provide free, confidential, online and comprehensive mental health
+          screening to adults in the San Francisco Bay Area with mental health
+          concerns and help you find treatment providers, learn more about
+          common mental health conditions that may be affecting you, and
+          connect with members of the community who are going through similar experiences.
+        </p>
+      </div>
+      <div class="buttons">
+        <a href="#" class="btn btn-primary btn-lg" role="button">Screening</a>
+        <a href="#" class="btn btn-primary btn-lg" role="button">Providers</a>
       </div>
     </div>
   </div>
+
+  <div class="next-section" style="height:500px;">
+
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <!-- Latest compiled and minified JavaScript -->
