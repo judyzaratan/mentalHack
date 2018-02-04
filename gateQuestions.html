@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project X</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <style>
+    body {
+      font-family: Roboto;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .navbar {
+      background-color: #ffca46;
+      border-radius: 0;
+      margin-bottom: 35px;
+    }
+
+    .title {
+      font-size: 34px;
+      font-weight: 500;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      font-weight: normal;
+      color: #717171;
+      margin-bottom: 60px;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    .primary-btn-reverse {
+      width: 200px;
+      height: 52px;
+      border-radius: 3px;
+      border: solid 3px #1195f2;
+      font-size: 18px;
+      font-weight: 500;
+      color: #1195f2;
+    }
+
+    .primary-btn-reverse:active,
+    .primary-btn-reverse:hover,
+    .primary-btn-reverse:focus {
+      color: #1195f2;
+    }
+
+    .primary-btn {
+      width: 200px;
+      height: 52px;
+      border-radius: 3px;
+      background-color: #1195f2;
+      font-size: 18px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+
+    .primary-btn:hover {
+      color: #ffffff;
+    }
+
+    .questions {
+      width: 550px;
+      margin: 0 auto;
+      margin-bottom: 60px;
+    }
+
+    .question-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 28px;
+    }
+
+    .selection {
+      height: 56px;
+      border: none;
+      border-radius: 3px;
+      background-color: #d8edff;
+      font-family: Roboto;
+      font-size: 18px;
+      color: #717171;
+
+      transition: background-color 0.1s ease-in-out,
+        color 0.1s ease-in-out;
+    }
+
+    .selection.selected {
+      background-color: #ffca46;
+      color: white;
+      font-weight: 500;
+    }
+
+    .navigate-btn {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar"></nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="greeting">
+          <h1 class="title">
+            Which of these are you having problems with?
+          </h1>
+          <h2 class="subtitle">
+            Please select all that apply.
+          </h2>
+
+          <div class="questions">
+            <div class="question-row">
+              <button class="selection" style="width:130px">
+                Anxiety
+              </button>
+              <button class="selection" style="width:368px">
+                Hearing Voices / Feeling Paranoid
+              </button>
+            </div>
+            <div class="question-row">
+              <button class="selection" style="width:330px">
+                Obsessive Thoughts / Compulsions
+              </button>
+              <button class="selection" style="width:173px">
+                Alcohol Abuse
+              </button>
+            </div>
+            <div class="question-row">
+              <button class="selection" style="width:372px">
+                Focus / Procrastination / Distraction
+              </button>
+              <button class="selection" style="width:130px">
+                My Mood
+              </button>
+            </div>
+            <div class="question-row">
+              <button class="selection" style="width:285px">
+                Getting Along With People
+              </button>
+              <button class="selection" style="width:220px">
+                Reliving Trauma
+              </button>
+            </div>
+          </div>
+
+          <div class="navigate-btn">
+            <button href="#" class="btn primary-btn-reverse" role="button" style="margin-right:20px">
+              Back
+            </button>
+            <button href="#" class="btn primary-btn" role="button">
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <script>
+    $('.selection').on('click', function() {
+      $(this).toggleClass('selected');
+    });
+  </script>
+  </body>
+</html>
