@@ -5,27 +5,65 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Project X</title>
-  <style>
-    .greeting{
-      text-align: center;
-    }
-
-  </style>
-
-
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <style>
+    body{
+      font-family: Roboto;
+    }
+    .nav-text {
+      color: black;
+    }
+    .greeting{
+      text-align: center;
+    }
+
+    .yellow-nav {
+      background-color: #ffca46;
+    }
+    .btn-style {
+      width: 100px;
+      height: 56px;
+      border-radius: 3px;
+      color: white;
+      background-color: #1195f2;
+      width: 100px;
+      height: 40px;
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 2.11;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+    }
+    .divider {
+      width:50px;
+      height:auto;
+      display:inline-block;
+    }
+    ol {
+    }
+
+
+  </style>
+
+
 
 
 
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
+  <nav class="nav-text navbar navbar-default">
+    <div class="yellow-nav container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Project X</a>
       </div>
@@ -34,7 +72,6 @@
         <li><a href="/resources">Resources</a></li>
         <li><a href="/providers">Providers</a></li>
       </ul>
-
     </div>
   </nav>
 
@@ -59,8 +96,9 @@
             common mental health conditions that may be affecting you, and
             connect with members of the community who are going through similar experiences</p>
           <div class="buttons">
-            <a href="#" class="btn btn-primary btn-lg" role="button">Screening</a>
-            <a href="#" class="btn btn-primary btn-lg" role="button">Providers</a>
+            <a href="#" class="btn btn-style" role="button">Screening</a>
+            <div class="divider"></div>
+            <a href="#" class="btn btn-style" role="button">Providers</a>
           </div>
         </div>
       </div>
