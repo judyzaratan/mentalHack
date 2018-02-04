@@ -33,7 +33,7 @@
       font-weight: 500;
       font-style: normal;
       font-stretch: normal;
-      line-height: 1.41;
+      line-height: 38px;
       letter-spacing: normal;
       text-align: center;
       color: #a8a8a8;
@@ -45,18 +45,19 @@
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
-      line-height: 1.58;
+      line-height: 34px;
       letter-spacing: normal;
       text-align: left;
       color: #333333;
 
     }
     .text2 {
+      font-family: 'Roboto';
       font-size: 20px;
       font-weight: normal;
       font-style: normal;
       font-stretch: normal;
-      line-height: 1.7;
+      line-height: 34px;
       letter-spacing: 0.5px;
       text-align: left;
       color: #333333;
@@ -75,27 +76,32 @@
       list-style: none;
       padding-left: 1em;
     }
+    img {
+      border: none;
+      display: block;
+      margin: 0 auto;
+    }
     .box {
       border-radius: 5px;
       border: solid 2px #dfe2e7;
+      padding: 10px 10px 10px 10px;
     }
     .box-header {
       line-height: 1.58;
-      letter-spacing: normal;
       text-align: center;
       color: #333333;
       font-size: 15px;
     }
     .box-text {
-      font-family: Roboto;
-      font-size: 10px;
       font-weight: 300;
+      line-height: 1.5;
+      text-align: center;
+      font-family: 'Roboto';
+      font-size: 15px;
       font-style: normal;
       font-stretch: normal;
-      line-height: 1.5;
       letter-spacing: normal;
-      text-align: center;
-        color: #000000;
+      color: #000000;
     }
 
   </style>
@@ -117,11 +123,11 @@
 
   <div id="screening" class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3 content">
+      <div class="col-md-8 col-md-offset-2 content">
         <h3 class="screen-header">Screening Results</h3>
         <p class="text1">Based upon the answers you provided, you may be suffering from the following mental health conditions:</p>
         <div class="row">
-          <div class="disorder-list col-md-8 col-md-offset-2">
+          <div class="disorder-list col-md-8 col-md-offset-4">
             <ol>
               <li>Major Depressive Disorder, Moderate</li>
               <li>Generalized Anxiety Disorder</li>
@@ -138,10 +144,12 @@
     </div>
     <div class="row">
       <div class="treatment box col-md-2 col-md-offset-3">
+        <img src="/assets/TrtmntPrvdr_Icon.png" alt="treatment_provider">
         <h6 class="box-header">Treatment Providers</h6>
         <p class="box-text">If you are ready to find a treatment provider, please click here.</p>
       </div>
       <div class="community box col-md-2 col-md-offset-1">
+        <img src="/assets/Community_Icon.png" alt="community">
         <h6 class="box-header">Meet Your Community</h6>
         <p class="box-text">Watch videos of others' lived experiences or join a forum.</p>
       </div>
